@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+
+
+	
+    <category>
+	    <pattern>start over</pattern>
+	    <template>Can I ask you a few questions in order to accurately
+	    recommend the right jobs?</template>
+    </category>
+    
+    <category>
+        <pattern> NO </pattern>
+        <that>CAN I ASK YOU A FEW QUESTIONS IN ORDER TO ACCURATELY
+        RECOMMEND THE RIGHT JOBS</that>
+        <template> Ok, dont waste my time.</template>
+    </category>
+    
+     <category>
+        <pattern> Yes </pattern>
+         <that>CAN I ASK YOU A FEW QUESTIONS IN ORDER TO ACCURATELY 
+        RECOMMEND THE RIGHT JOBS</that>
+        <template>Excellent, Do you enjoy teaching?</template>
+    </category>
+    
+     <category>
+        <pattern> No </pattern>
+        <that>EXCELLENT, DO YOU ENJOY TEACHING</that>
+        <template>That's to bad!</template>
+    </category>
+    
+     <category>
+        <pattern>Yes </pattern>
+        <that>EXCELLENT, DO YOU ENJOY TEACHING</that>
+        <template>Good for you!</template>
+    </category>
+
+
+    
+    
+</aiml>

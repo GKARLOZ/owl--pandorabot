@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+      <category>
+    <pattern>*</pattern>
+    <template>Do you need help?
+        	<button>
+                <text>yes</text>
+                <postback>HELP</postback>
+             </button>
+             <button>
+                <text>no</text>
+                <postback> ignore </postback>
+             </button>
+    </template>
+    
+  </category>
+ 
+  <category>
+      <pattern> ignore </pattern>
+      <template> ok </template>
+  </category>
+    
+  <category>
+    <pattern>HELP</pattern>
+    <template>Do you need help with carrer choices?
+        	<button>
+                <text>yes</text>
+                <postback>start over</postback>
+             </button>
+             <button>
+                <text>no</text>
+                <postback> end </postback>
+             </button>
+    </template>
+    
+  </category>
+ 
+  <category>
+      <pattern> end </pattern>
+      <template>ok, type HELP if you need help.</template>
+  </category>
+
+</aiml>

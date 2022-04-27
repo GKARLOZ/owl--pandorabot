@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+    <pattern>start over</pattern>
+    <template>Can I ask you a few questions in order to accurately
+	    recommend the right jobs?
+        	<button>
+                <text>yes</text>
+                <postback>YES START</postback>
+             </button>
+             <button>
+                <text>no</text>
+                <postback>end</postback>
+             </button>
+    </template>
+    
+  </category>
+ 
+  <category>
+      <pattern>YES START </pattern>
+      <template> Excellent! Do you enjoy teaching?	
+            <button>
+                <text>yes</text>
+                <postback>YES ONE</postback>
+             </button>
+             <button>
+                <text>no</text>
+                <postback>NO ONE</postback>
+             </button>
+        </template>
+  </category>
+  
+  <category>
+      <pattern>YES ONE</pattern>
+      <template> I would recommend to be a computer science professor which 
+      involves teaching students about computers, software and related technology. 
+            
+        </template>
+  </category>
+  
+  <category>
+      <pattern>NO ONE </pattern>
+      <template> No worries! Do you enjoy designing?	
+            <button>
+                <text>yes</text>
+                <postback>YES TWO</postback>
+             </button>
+             <button>
+                <text>no</text>
+                <postback>NO TWO</postback>
+             </button>
+        </template>
+  </category>
+  
+   <category>
+      <pattern>YES TWO</pattern>
+      <template> If you enjoy designing then you will enjoy web design. This profession 
+      involves creating websites using your imagination and making them fun to interact. 
+            
+        </template>
+  </category>
+  
+   <category>
+      <pattern>NO TWO </pattern>
+      <template> Hmmm..... Do you enjoy programming?	
+            <button>
+                <text>yes</text>
+                <postback>YES THREE</postback>
+             </button>
+             <button>
+                <text>no</text>
+                <postback>NO THREE</postback>
+             </button>
+        </template>
+  </category>
+  
+   <category>
+      <pattern>YES THREE</pattern>
+      <template> If yes, then Software engineering is the job for you! You will create 
+      application with different coding languages and solve problems as well. 
+            
+        </template>
+  </category>
+  
+   <category>
+      <pattern>NO THREE </pattern>
+      <template> Do you enjoy math?	
+            <button>
+                <text>yes</text>
+                <postback>YES FOUR</postback>
+             </button>
+             <button>
+                <text>no</text>
+                <postback>NO FOUR</postback>
+             </button>
+        </template>
+  </category>
+  
+   <category>
+      <pattern>YES FOUR</pattern>
+      <template> Excellent! You will enjoy being a data analyst that collects, cleans 
+      and interprets data to solve problems. 
+            
+        </template>
+  </category>
+  
+    <category>
+      <pattern>NO FOUR</pattern>
+      <template> You might like System Administrations that involve managing
+      operating systems. Also,  you will be upgrading,installinh and configuring 
+      application software.
+            
+        </template>
+  </category>
+  
+</aiml>
